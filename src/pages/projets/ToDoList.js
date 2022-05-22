@@ -23,10 +23,17 @@ const ToDoList = () => {
 
   function declancheurTache(id) {
     // enregistre l'état de la checkbox de la tache ayant pour id "id"
-    const nouvelleTaches = [...taches];
-    const tache = nouvelleTaches.find((tache) => tache.id === id);
+    const nouvellesTaches = [...taches];
+    const tache = nouvellesTaches.find((tache) => tache.id === id);
     tache.estCochee = !tache.estCochee;
-    setTaches(nouvelleTaches);
+    setTaches(nouvellesTaches);
+  }
+
+  function supprimerTache(id) {
+    // supprime la tache ayant pour id "id"
+    const nouvellesTaches = [...taches];
+    const taches = nouvellesTaches.filter((tache) => tache.id !== id);
+    setTaches(taches);
   }
 
   // ajouter une nouvelle tache à la liste des taches
@@ -63,7 +70,11 @@ const ToDoList = () => {
         onClick={handleReinitialiserTaches}
       ></input>
       {/* liste des taches actuelles */}
-      <Taches taches={taches} declancheurTache={declancheurTache} />
+      <Taches
+        taches={taches}
+        declancheurTache={declancheurTache}
+        supprimerTache={supprimerTache}
+      />
     </div>
   );
 };

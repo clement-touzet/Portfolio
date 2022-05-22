@@ -1,8 +1,14 @@
 import React from "react";
 
-const Tache = ({ tache, declancheurTache }) => {
+const Tache = ({ tache, declancheurTache, supprimerTache }) => {
+  // enregistre l'état de la case cochée
   function handleTacheClic(e) {
     declancheurTache(tache.id);
+  }
+
+  // supprimer la tache correspondante
+  function handleSupprimerTache(e) {
+    supprimerTache(tache.id);
   }
 
   return (
@@ -14,7 +20,11 @@ const Tache = ({ tache, declancheurTache }) => {
       ></input>
       <label>{tache.nom}</label>
       <input type="button" value="Modifier"></input>
-      <input type="button" value="Supprimer"></input>
+      <input
+        type="button"
+        value="Supprimer"
+        onClick={handleSupprimerTache}
+      ></input>
     </li>
   );
 };

@@ -1,7 +1,7 @@
 import React from "react";
 import Tache from "./Tache";
 
-const Taches = ({ taches, declancheurTache }) => {
+const Taches = ({ taches, declancheurTache, supprimerTache }) => {
   return (
     <ul className="listeTaches">
       {taches.map((tache) => {
@@ -10,6 +10,7 @@ const Taches = ({ taches, declancheurTache }) => {
             key={tache.id}
             declancheurTache={declancheurTache}
             tache={tache}
+            supprimerTache={supprimerTache}
           />
         );
       })}
