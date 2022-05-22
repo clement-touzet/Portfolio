@@ -16,11 +16,6 @@ const MesProjets = () => {
       description: "jeu video",
       lien: "/mes-projets/",
     },
-    {
-      titre: "space invader",
-      description: "jeu video",
-      lien: "/mes-projets/",
-    },
   ];
 
   return (
