@@ -39,6 +39,11 @@ const ToDoList = () => {
     tacheInputRef.current.value = null;
   }
 
+  // réinitialiser(supprime) les tâches de la liste
+  function handleReinitialiserTaches(e) {
+    setTaches([]);
+  }
+
   return (
     <div>
       <a href="/mes-projets">RETOUR</a>
@@ -52,7 +57,11 @@ const ToDoList = () => {
           onClick={handleAjouterNouvelleTache}
         ></input>
       </div>
-      <input type="button" value="Réinitialiser la liste"></input>
+      <input
+        type="button"
+        value="Réinitialiser la liste"
+        onClick={handleReinitialiserTaches}
+      ></input>
       {/* liste des taches actuelles */}
       <Taches taches={taches} declancheurTache={declancheurTache} />
     </div>
