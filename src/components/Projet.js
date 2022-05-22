@@ -1,10 +1,15 @@
 import React from "react";
 
-const Projet = () => {
+const Projet = (props) => {
   return (
-    <div className="projet">
-      <h3 className="titreProjet">Mon projet </h3>
-      <p className="descriptionProjet"> Description</p>
+    <div
+      className="projet"
+      onClick={(e) => {
+        document.location.href = props.lien;
+      }}
+    >
+      <h3 className="titreProjet">{props.titre} </h3>
+      <p className="descriptionProjet"> {props.description}</p>
     </div>
   );
 };

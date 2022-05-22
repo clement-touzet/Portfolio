@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import MesCompetences from "./pages/MesCompetences";
 import MesProjets from "./pages/MesProjets";
 import MonParcours from "./pages/MonParcours";
+import ToDoList from "./pages/projets/ToDoList";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/mes-projets" element={<MesProjets />} />
+        <Route path="/mes-projets/to-do-list" element={<ToDoList />} />
         <Route path="/mon-parcours" element={<MonParcours />} />
         <Route path="/mes-competences" element={<MesCompetences />} />
         <Route path="/contact" element={<Contact />} />
