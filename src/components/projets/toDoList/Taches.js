@@ -9,6 +9,7 @@ const Taches = ({
 }) => {
   return (
     <ul className="listeTaches">
+      {taches.length === 0 ? <p>Aucune tâches en cours.</p> : false}
       {taches.map((tache) => {
         return (
           <Tache
