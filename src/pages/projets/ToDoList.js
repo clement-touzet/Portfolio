@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import Taches from "../../components/Taches";
+import Taches from "../../components/projets/toDoList/Taches";
 import { v4 as uuidv4 } from "uuid";
 
 const LOCAL_STORAGE_KEY = "ToDoList.taches";
@@ -63,23 +63,26 @@ const ToDoList = () => {
   }
 
   return (
-    <div>
-      <a href="/mes-projets">RETOUR</a>
-      <h2>Application de to do list en cours de développement...</h2>
+    <div className="toDoList">
+      <div className="menu">
+        <a href="/mes-projets">RETOUR</a>
+      </div>
       {/* corps de l'application */}
-      <div>
-        <input ref={tacheInputRef} type="text" placeholder="Tâche"></input>
+      <div className="application">
+        <div>
+          <input ref={tacheInputRef} type="text" placeholder="Tâche"></input>
+          <input
+            type="button"
+            value="Ajouter"
+            onClick={handleAjouterNouvelleTache}
+          ></input>
+        </div>
         <input
           type="button"
-          value="Ajouter"
-          onClick={handleAjouterNouvelleTache}
+          value="Réinitialiser la liste"
+          onClick={handleReinitialiserTaches}
         ></input>
       </div>
-      <input
-        type="button"
-        value="Réinitialiser la liste"
-        onClick={handleReinitialiserTaches}
-      ></input>
       {/* liste des taches actuelles */}
       <Taches
         taches={taches}

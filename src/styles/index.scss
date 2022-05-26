@@ -1,7 +1,12 @@
-ul{
-    list-style: none;
-}
-.boutonPositionerTache{
-    height:30px;
-    width: 30px;
-}
+@import "./settings.scss";
+
+@import "./components/Header.scss";
+@import "./components/projets/Projet.scss";
+@import "./components/projets/Projets.scss";
+@import "./components/projets/toDoList/Taches.scss";
+
+@import "./pages/MesProjets.scss";
+@import "./pages/projets/ToDoList.scss";
+
+
+

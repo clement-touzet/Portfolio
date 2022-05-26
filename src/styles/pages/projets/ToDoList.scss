@@ -1,0 +1,10 @@
+ul{
+    list-style: none;
+}
+.boutonPositionerTache{
+    height:30px;
+    width: 30px;
+}
+.application{
+    @include alignementVertical;
+}

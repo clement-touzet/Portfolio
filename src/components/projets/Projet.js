@@ -8,8 +8,10 @@ const Projet = (props) => {
         document.location.href = props.lien;
       }}
     >
-      <h3 className="titreProjet">{props.titre} </h3>
-      <p className="descriptionProjet"> {props.description}</p>
+      <div className="contenuCarte">
+        <h3 className="titreProjet">{props.titre} </h3>
+        <p className="descriptionProjet"> {props.description}</p>
+      </div>
     </div>
   );
 };
