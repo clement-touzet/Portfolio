@@ -8,22 +8,19 @@ const Taches = ({
   modifierTache,
 }) => {
   return (
-    <div className="listeTaches">
-      <ul className="listeTachesUl">
-        {taches.length === 0 ? <p>Aucune tâches en cours.</p> : false}
-        {taches.map((tache) => {
-          return (
-            <Tache
-              key={tache.id}
-              tache={tache}
-              declancheurTache={declancheurTache}
-              supprimerTache={supprimerTache}
-              modifierTache={modifierTache}
-            />
-          );
-        })}
-      </ul>
-    </div>
+    <ul className="listeTaches">
+      {taches.map((tache) => {
+        return (
+          <Tache
+            key={tache.id}
+            tache={tache}
+            declancheurTache={declancheurTache}
+            supprimerTache={supprimerTache}
+            modifierTache={modifierTache}
+          />
+        );
+      })}
+    </ul>
   );
 };
 
