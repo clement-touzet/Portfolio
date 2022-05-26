@@ -29,11 +29,22 @@ const ToDoList = () => {
     setTaches(nouvellesTaches);
   }
 
+  function modifierTache(id) {
+    // modifie la tache ayant pour id "id" avec la valeur dans le input
+    const nouvellesTaches = [...taches];
+    const tache = nouvellesTaches.find((tache) => tache.id === id);
+    tache.nom = tacheInputRef.current.value;
+    tacheInputRef.current.value = null;
+    setTaches(nouvellesTaches);
+  }
+
   function supprimerTache(id) {
     // supprime la tache ayant pour id "id"
     const nouvellesTaches = [...taches];
-    const taches = nouvellesTaches.filter((tache) => tache.id !== id);
-    setTaches(taches);
+    const tachesSansCelleSupprimee = nouvellesTaches.filter(
+      (tache) => tache.id !== id
+    );
+    setTaches(tachesSansCelleSupprimee);
   }
 
   // ajouter une nouvelle tache à la liste des taches
@@ -74,6 +85,7 @@ const ToDoList = () => {
         taches={taches}
         declancheurTache={declancheurTache}
         supprimerTache={supprimerTache}
+        modifierTache={modifierTache}
       />
     </div>
   );
