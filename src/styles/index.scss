@@ -1,9 +1,11 @@
 @import "./settings.scss";
 
 @import "./components/Header.scss";
+@import "./components/Navigation.scss";
 @import "./components/projets/Projet.scss";
 @import "./components/projets/Projets.scss";
 @import "./components/projets/toDoList/Taches.scss";
+@import "./components/projets/toDoList/Tache.scss";
 
 @import "./pages/MesProjets.scss";
 @import "./pages/projets/ToDoList.scss";

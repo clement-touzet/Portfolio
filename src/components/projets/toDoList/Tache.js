@@ -23,16 +23,18 @@ const Tache = ({ tache, declancheurTache, supprimerTache, modifierTache }) => {
         onChange={handleTacheClic}
       ></input>
       <label>{tache.nom}</label>
-      <input
-        type="button"
-        value="Modifier"
-        onClick={handleModifierTache}
-      ></input>
-      <input
-        type="button"
-        value="Supprimer"
-        onClick={handleSupprimerTache}
-      ></input>
+      <div className="boutons">
+        <input
+          type="button"
+          value="Modifier"
+          onClick={handleModifierTache}
+        ></input>
+        <input
+          type="button"
+          value="Supprimer"
+          onClick={handleSupprimerTache}
+        ></input>
+      </div>
     </li>
   );
 };

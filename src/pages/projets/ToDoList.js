@@ -5,6 +5,8 @@ import { v4 as uuidv4 } from "uuid";
 const LOCAL_STORAGE_KEY = "ToDoList.taches";
 
 const ToDoList = () => {
+  // Application de To Do Liste (liste de tâches à faire).
+
   const [taches, setTaches] = useState([]);
   const tacheInputRef = useRef();
 
@@ -62,6 +64,12 @@ const ToDoList = () => {
     setTaches([]);
   }
 
+  function enterKeyPressed(e) {
+    if (e.key === "Enter") {
+      handleAjouterNouvelleTache(e);
+    }
+  }
+
   return (
     <div className="toDoList">
       <div className="menu">
@@ -69,14 +77,18 @@ const ToDoList = () => {
       </div>
       {/* corps de l'application */}
       <div className="application">
-        <div>
-          <input ref={tacheInputRef} type="text" placeholder="Tâche"></input>
-          <input
-            type="button"
-            value="Ajouter"
-            onClick={handleAjouterNouvelleTache}
-          ></input>
-        </div>
+        <input
+          ref={tacheInputRef}
+          type="text"
+          placeholder="Tâche"
+          onKeyUp={enterKeyPressed}
+        ></input>
+        <input
+          type="button"
+          value="Ajouter"
+          onClick={handleAjouterNouvelleTache}
+        ></input>
+
         <input
           type="button"
           value="Réinitialiser la liste"

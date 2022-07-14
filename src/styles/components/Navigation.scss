@@ -1,0 +1,29 @@
+.navigation{
+    
+    ul {
+        list-style: none;
+        display:flex;
+        justify-content: space-around;
+        padding:0;
+        margin:20px 0 20px 0;
+        
+    }
+
+    ul > a {
+        text-decoration: none;
+        color:black;
+        border:black 1px solid;
+        padding: 10px;
+        border-radius:3px;
+        min-width: 120px;
+        text-align: center;
+        margin:0 2px 0 2px;
+        font-weight: bold;
+    }
+    
+    // hover
+    ul > a:hover{
+        background-color: #201b22;
+        color: #ececec;
+    }
+}

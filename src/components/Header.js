@@ -1,11 +1,12 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div>
-      <a href="/">
+    <div className="header">
+      <NavLink to="/" style={{ textDecoration: "none" }}>
         <h1>Clément Touzet</h1>
-      </a>
+      </NavLink>
     </div>
   );
 };
