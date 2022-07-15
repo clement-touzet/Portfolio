@@ -11,9 +11,9 @@ const Projets = () => {
       lien: "/mes-projets/to-do-list",
     },
     {
-      titre: "space invader",
-      description: "jeu video",
-      lien: "/mes-projets/",
+      titre: "Application de cinéma",
+      description: "Liste des films disponible au cinéma actuellement",
+      lien: "/mes-projets/application-cinema",
     },
   ];
 

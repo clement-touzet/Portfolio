@@ -16,7 +16,7 @@ const Tache = ({ tache, declancheurTache, supprimerTache, modifierTache }) => {
   }
 
   return (
-    <li className="tache" draggable>
+    <li className="tache">
       <input
         type="checkbox"
         defaultChecked={tache.estCochee}
