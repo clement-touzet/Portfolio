@@ -1,0 +1,48 @@
+.navigation{
+    ul {
+        list-style: none;
+        display:flex;
+        justify-content: space-around;
+        padding:0;
+        margin:10px 0 10px 0;
+        
+    }
+
+    ul > a {
+        text-decoration: none;
+        color:black;
+        // border:black 1px solid;
+        padding: 15px;
+        border-radius:3px;
+        min-width: 120px;
+        text-align: center;
+        margin:0 2px 0 2px;
+        font-weight: bold;
+    }
+    
+    .nav-active{
+        position: relative;
+        &::after{
+            content: "";
+            background-color:#201b22;
+            height: 2px;
+            width: 50%;
+            position: absolute;
+            border-radius: 10px;
+            bottom: 0px;
+            left: 50%;
+            transform: translateX(-50%);
+            -webkit-animation: anim 0.3s ease forwards;
+            animation: anim 0.6s ease forwards;
+            
+        }
+    }
+
+    // hover
+    ul > a:hover{
+        background-color: #201b22;
+        color: #ececec;
+    }
+
+    
+}

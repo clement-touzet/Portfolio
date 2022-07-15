@@ -1,14 +1,17 @@
 @import "./settings.scss";
 
-@import "./components/Header.scss";
-@import "./components/Navigation.scss";
-@import "./components/projets/Projet.scss";
-@import "./components/projets/Projets.scss";
-@import "./components/projets/toDoList/Taches.scss";
-@import "./components/projets/toDoList/Tache.scss";
+@import "./components/_header.scss";
+@import "./components/_navigation.scss";
+@import "./components/projets/_projet.scss";
+@import "./components/projets/_projets.scss";
+@import "./components/projets/toDoList/_taches.scss";
+@import "./components/projets/toDoList/_tache.scss";
+@import "./components/projets/application_cinema/card";
+@import "./components/projets/application_cinema/form";
+@import "./components/projets/application_cinema/headerCinema";
 
-@import "./pages/MesProjets.scss";
-@import "./pages/projets/ToDoList.scss";
-
+@import "./pages/_mesProjets.scss";
+@import "./pages/projets/_toDoList.scss";
+@import "./pages/projets/applicationCinema";
 
 

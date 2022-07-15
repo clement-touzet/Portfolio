@@ -1,0 +1,39 @@
+.headerCinema {
+    h1 {
+      font-size: 3.3rem;
+      text-shadow: 2px 3px 0px #546fe4;
+      text-align: center;
+      letter-spacing: 2px;
+    }
+    nav {
+      font-size: 1.3rem;
+  
+      ul {
+        display: flex;
+        list-style: none;
+        a {
+          text-decoration: none;
+          color: rgb(238, 238, 238);
+          border-radius: 10px;
+          width: 102px;
+          text-align: center;
+          margin-right: 5px;
+  
+          &:visited {
+            text-decoration: none;
+            color: rgb(238, 238, 238);
+          }
+          &:hover {
+            background: #060d2c;
+          }
+        }
+        a.nav-active {
+          background: #546fe4;
+  
+          &:hover {
+            background: #060d2c;
+          }
+        }
+      }
+    }
+  }
