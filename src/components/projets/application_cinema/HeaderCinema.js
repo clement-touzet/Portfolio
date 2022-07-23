@@ -23,6 +23,7 @@ const HeaderCinema = () => {
           </NavLink>
         </ul>
       </nav>
+      <h1>REACT MOVIES</h1>
     </div>
   );
 };

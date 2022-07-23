@@ -13,7 +13,7 @@ const Projets = () => {
     {
       titre: "Application de cinéma",
       description: "Liste des films disponible au cinéma actuellement",
-      lien: "/mes-projets/application-cinema",
+      lien: "/mes-projets/application-cinema/accueil",
     },
   ];
 

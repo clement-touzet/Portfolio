@@ -12,13 +12,13 @@
 
 .bodyAppCinema{
   background-color: #212040;
-  height:1080px;
-
   font-family: $font-1;
+  min-height: 1000px;
 
   .menu > a{
     text-decoration: none;
     color:white;
   }
   
+ 
 }

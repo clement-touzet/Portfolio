@@ -29,6 +29,7 @@ const App = () => {
         <Route path="/mon-parcours" element={<MonParcours />} />
         <Route path="/mes-competences" element={<MesCompetences />} />
         <Route path="/contact" element={<Contact />} />
+        {/* todo charger une page erreur 404 plutot que Home */}
         <Route path="*" element={<Home />} />
       </Routes>
     </BrowserRouter>

@@ -7,8 +7,12 @@
     src: url(../assets/fonts/Dongle-Light.ttf);
   }
   
+
+
 $font-1: "font-1", sans-serif;
 $font-2: "font-2", sans-serif;
+
+
 
 @mixin alignementVertical{
     display:flex;
@@ -21,4 +25,5 @@ body{
     padding:0;
     
 }
+
 

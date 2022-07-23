@@ -7,6 +7,7 @@
       margin: 0 auto;
   
       input[type="text"] {
+        font-family: $font-1;
         padding: 1px 10px;
         border-radius: 10px 10px 0 0;
         border: none;
@@ -18,8 +19,9 @@
         text-align: center;
       }
       input[type="submit"] {
+        font-family: $font-1;
         padding: 1px 10px;
-        width: 220px;
+        width: 240px;
         border-radius: 0 0 10px 10px;
         border: none;
         background: #546fe4;
@@ -43,9 +45,11 @@
   
       #goodToBad {
         border-radius: 10px 0 0 10px;
+        color:white;
       }
       #badToGood {
         border-radius: 0 10px 10px 0;
+        color:white;
       }
       #goodToBad,
       #badToGood {
@@ -71,5 +75,10 @@
         position: absolute;
         top: 50%;
       }
+    }
+    .result {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
     }
   }

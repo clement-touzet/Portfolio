@@ -1,11 +1,16 @@
 .headerCinema {
+  
     h1 {
       font-size: 3.3rem;
       text-shadow: 2px 3px 0px #546fe4;
+      color: rgb(238, 238, 238);
       text-align: center;
       letter-spacing: 2px;
     }
     nav {
+      position: absolute;
+        top: 136px;
+        left: 16px;
       font-size: 1.3rem;
   
       ul {
