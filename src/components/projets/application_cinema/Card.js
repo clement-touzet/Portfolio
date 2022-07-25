@@ -105,7 +105,13 @@ const Card = ({ movie }) => {
         {movie.vote_average + " / 10 "}
         <span>⭐</span>
       </h4>
-      <ul>{genreFinder()}</ul>
+      <ul>
+        {movie.genre_ids
+          ? genreFinder()
+          : movie.genres.map((genre, index) => (
+              <li key={index}> {genre.name}</li>
+            ))}
+      </ul>
       {movie.overview ? <h2> Synopsis</h2> : ""}
       <p>{movie.overview}</p>
       <div className="btn" onClick={() => addStorage()}>
