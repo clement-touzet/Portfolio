@@ -5,7 +5,7 @@ import Card from "./Card";
 const Form = () => {
   const [moviesData, setMoviesData] = useState([]);
   const [search, setSearch] = useState("player");
-  const [sortGoodBad, setSortGoodBad] = useState("badToGood");
+  const [sortGoodBad, setSortGoodBad] = useState("goodToBad");
 
   // pour rappel useEffet = joue le composant qu'une seule fois (sauf avec le callback)
   useEffect(() => {
