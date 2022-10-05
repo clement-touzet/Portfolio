@@ -1,10 +1,8 @@
 import React from "react";
-import Navigation from "../layouts/navbar/Navigation";
 
 const Contact = () => {
   return (
     <div>
-      <Navigation />
       <h1>Me contacter</h1>
       <ul>
         <li>Par mail: clement.touzet40@gmail.com</li>

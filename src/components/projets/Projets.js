@@ -1,5 +1,7 @@
+
 import React from "react";
 import Projet from "./Projet";
+import Grid2 from '@mui/material/Unstable_Grid2';
 
 const Projets = () => {
   // chaque élément de projets représente un projet
@@ -18,11 +20,16 @@ const Projets = () => {
   ];
 
   return (
-    <div className="projets">
+    <Grid2 container className="projets" spacing={1} sx={{width:"100%",display: "flex",
+   
+    alignItems:"center",
+    justifyContent:"space-around"}} >
       {projets.map((projet, index) => (
-        <Projet key={index} {...projet} />
+        <Grid2 item key={index} md={5.5} xs={8}>
+          <Projet {...projet} />
+        </Grid2>
       ))}
-    </div>
+    </Grid2>
   );
 };
 
