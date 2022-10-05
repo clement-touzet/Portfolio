@@ -1,10 +1,11 @@
+/* eslint-disable react/prop-types */
 import React from "react";
 
 const Projet = (props) => {
   return (
     <div
       className="projet"
-      onClick={(e) => {
+      onClick={() => {
         document.location.href = props.lien;
       }}
     >

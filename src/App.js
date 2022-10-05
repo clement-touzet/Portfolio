@@ -9,7 +9,7 @@ import MesProjets from "./pages/MesProjets";
 import MonParcours from "./pages/MonParcours";
 import ApplicationCinema from "./pages/projets/application_cinema/ApplicationCinema";
 import ToDoList from "./pages/projets/ToDoList";
-
+import './App.css'
 const App = () => {
   return (
     <BrowserRouter>

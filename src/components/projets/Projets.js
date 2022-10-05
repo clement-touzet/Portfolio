@@ -6,9 +6,9 @@ const Projets = () => {
   // [ {titre:titre,description:description,lien:lien}, ... ]
   const projets = [
     {
-      titre: "To do list",
-      description: "Application pour lister des tâches",
-      lien: "/mes-projets/to-do-list",
+      titre: "Rien pour l'instant",
+      description: "Voidd",
+      lien: "",
     },
     {
       titre: "Application de cinéma",

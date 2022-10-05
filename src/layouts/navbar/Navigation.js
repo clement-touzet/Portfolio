@@ -1,10 +1,19 @@
+import { AppBar, styled, Toolbar, Typography } from "@mui/material";
 import React from "react";
 import { NavLink } from "react-router-dom";
+
+const StyledToolbar = styled(Toolbar) ({
+  display:"flex",
+  justifyContent:"space-between"
+})
+const StyledNavLink = styled(NavLink)({
+  color:"red"
+})
 
 const Navigation = () => {
   return (
     <div className="navigation">
-      <ul>
+      {/* <ul>
         <NavLink
           to="/mes-projets"
           className={(nav) => (nav.isActive ? "nav-active" : "")}
@@ -33,7 +42,15 @@ const Navigation = () => {
         >
           <li>Me Contacter</li>
         </NavLink>
-      </ul>
+      </ul> */}
+      <AppBar position="sticky">
+        <StyledToolbar><Typography variant="h6" sx={{display:{xs:"none",sm:"block"}}}>Clément Touzet</Typography></StyledToolbar>
+        <StyledNavLink
+          to="/mes-projets"
+          className={(nav) => (nav.isActive ? "nav-active" : "")}
+          draggable={false}
+        >Mes projets</StyledNavLink>
+      </AppBar>
     </div>
   );
 };

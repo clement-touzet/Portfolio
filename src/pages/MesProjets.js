@@ -1,6 +1,6 @@
 import React from "react";
-import Navigation from "../components/Navigation";
 import Projets from "../components/projets/Projets";
+import Navigation from "../layouts/navbar/Navigation";
 
 const MesProjets = () => {
   return (
