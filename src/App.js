@@ -14,10 +14,19 @@ import { Box, Stack } from "@mui/material";
 const App = () => {
   return (
     <BrowserRouter>
-    <Navigation />
+      <Navigation />
       <Box>
-        <Stack direction="row" spacing={2} justifyContent="space-between">
-
+        <Stack
+          direction="row"
+          spacing={2}
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "space-around",
+            width:"100%"
+          }}
+        >
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/mes-projets" element={<MesProjets />} />
