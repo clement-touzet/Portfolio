@@ -9,7 +9,7 @@ const Competence = ({
         <Box sx={{
             margin:"3px"
         }}>
-            <Chip color="primary" label={competence} onClick={handleClickChip(competence)} />
+            <Chip color="primary" label={competence} onClick={() =>handleClickChip(competence)} />
         </Box>
     );
 
