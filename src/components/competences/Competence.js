@@ -1,20 +1,23 @@
-import { Chip } from '@mui/material';
+import { Box, Chip } from '@mui/material';
 import React from 'react';
 import PropTypes from 'prop-types';
 
 const Competence = ({
-    label
+    competence,handleClickChip
 }) => {
     return (
-        <div>
-            <Chip label={label}></Chip>
-        </div>
+        <Box sx={{
+            margin:"3px"
+        }}>
+            <Chip color="primary" label={competence} onClick={handleClickChip(competence)} />
+        </Box>
     );
 
 };
 
 Competence.propTypes = {
-    label: PropTypes.string
+    competence: PropTypes.string,
+    handleClickChip: PropTypes.func
   };
   
 
